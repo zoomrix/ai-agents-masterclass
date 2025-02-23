@@ -50,6 +50,8 @@ services:
     image: flowiseai/flowise
     networks: ['demo']
     restart: unless-stopped
+    ports:
+        - 5432:5432
     container_name: flowise
     environment:
         - PORT=3001
